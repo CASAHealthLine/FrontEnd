@@ -1,4 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.image-component {
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 2.5rem;
+  border-radius: 1.5rem;
+  aspect-ratio: 1 / 1;
+}
